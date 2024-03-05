@@ -76,8 +76,6 @@ metadata.create_all(engine)
 
 app = FastAPI()
 
-#faker = Faker("ru_RU")
-
 
 @app.on_event("startup")
 async def startup():
