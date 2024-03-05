@@ -18,7 +18,7 @@ class UserIn(BaseModel):
     lastname: str = Field(min_length=2)
     email: EmailStr = Field(max_length=128)
     password: str = Field(max_length=32)
-    #order = relationship("Order", uselist=False, back_populates="Order")
+
 
 
 class User(UserIn):
@@ -33,7 +33,7 @@ class ItemIn(BaseModel):
 
 class Item(ItemIn):
     id: int
-    #order = relationship("Order", uselist=False, back_populates="Order")
+
 
 
 class OrderIn(BaseModel):
